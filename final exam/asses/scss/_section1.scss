@@ -1,0 +1,46 @@
+.section1{
+    background-image: url("https://preview.colorlib.com/theme/florist/img/hero/hero-2.jpg");
+    width: 100%;
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .section11{
+        @include between;
+        width: 100%;
+        padding: 100px 0;
+        .left{
+            @include start;
+            flex-direction: column;
+            width: 50%;
+            padding: 100px 0;
+            gap: 50px;
+            span{
+                font-size: 30px;
+            }
+            p{
+                font-size: 40px;
+            }
+            button{
+                padding: 20px 22px;
+                border-radius: 30px;
+                border: none;
+                color: #fff;
+                font-weight: 800;
+                background-color: rgb(244,98,150);
+            }
+        }
+    }
+}
+@media screen and (max-width:771px) {
+ .section1{
+    .container{
+        .section11{
+            .left{
+                width: 100%;
+            }
+        }
+    }
+ }
+    
+}

@@ -1,0 +1,53 @@
+.section5{
+    background-image: url("https://preview.colorlib.com/theme/florist/img/hero/hero-2.jpg");
+    width: 100%;
+    min-height: 90vh;
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @include center;
+    color: #fff;
+    .container{
+        .section51{
+            @include center;
+            flex-direction: column;
+            width: 100%;
+           .text{
+            @include center;
+            flex-direction: column;
+            text-align: center;
+            color:#000;
+          font-size: 20px;
+            width:80%;
+            gap: 20px;
+            button{
+              
+                    padding: 10px 12px;
+                    border-radius: 30px;
+                    border: none;
+                    background-color: #fff;
+                    font-weight: 800;
+                    color: rgb(244,98,150);
+                    margin-top: 10px;
+            }
+            h1{
+                font-weight: 300;
+                font-size: 30px;
+                font-family: 'Grape Nuts', cursive;
+            }
+           }
+        }
+    }
+}
+
+@media screen and (max-width:776px){
+    .section5{
+        .container{
+        .section51{
+            .text{
+                width: 100%;
+            }
+        }
+    }}
+}

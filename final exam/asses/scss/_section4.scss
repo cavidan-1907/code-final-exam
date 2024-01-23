@@ -1,0 +1,73 @@
+.section4{
+    background-image: url("https://preview.colorlib.com/theme/florist/img/call-bg.jpg");
+    width: 100%;
+    min-height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    .section41{
+        @include between;
+        width: 100%;
+        padding: 80px 0;
+        .left{
+            @include start;
+            flex-direction: column;
+            width: 50%;
+            padding: 100px 0;
+            gap: 50px;
+            span{
+                font-size: 35px;
+                font-family: 'Grape Nuts', cursive;
+            }
+            p{
+                font-size: 45px;
+                font-family: 'Grape Nuts', cursive;
+            }
+        .button{ 
+            @include start;
+         gap: 20px;
+            
+            :nth-child(1){
+                padding: 20px 22px;
+                border-radius: 30px;
+                border: none;
+                color: #fff;
+                font-weight: 800;
+                background-color: rgb(244,98,150);
+            }
+            :nth-child(2){
+                padding: 20px 22px;
+                border-radius: 30px;
+                border: none;
+                background-color: #fff;
+                font-weight: 800;
+                color: rgb(244,98,150);
+            }
+        }
+    }
+    }
+}
+@media screen and (max-width:771px) {
+ .section4{
+    .container{
+        .section41{
+            .left{
+                width: 100%;
+                .button{
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+ }
+    
+}
+.carusel-item{
+    width: 100%;
+    img{
+        object-fit: cover;
+        width: 100%;
+        min-height: 100vh;
+    }
+}
